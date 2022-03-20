@@ -18,6 +18,8 @@ function App() {
   return (
     <div>
        <Counter1 initialValue={10} />
+       <Counter1 initialValue={10} />
+       <Counter1 initialValue={10} />
     </div>
   );
 }
