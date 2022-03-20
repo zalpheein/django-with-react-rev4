@@ -6,12 +6,12 @@ import './App.css';
 class Counter1 extends React.Component {
     state = {
         value: this.props.initialValue,
-    }
+    };
 
     onClick = () => {
         const { value } = this.state;
         // 상태값을 설정시 setState 이용
-        this.setState( { value: value + 1 } )
+        this.setState( { value: value + 1 } );
     };
 
     render() {
@@ -19,11 +19,20 @@ class Counter1 extends React.Component {
         return (
             <div>
                 Counter1 : {value}
-                <Button onClick={this.onClick} >+1</Button>
+                <Button onClick={this.onClick}>+1</Button>
             </div>
         );
-    }
+    };
 }
+
+class FruitComponent extends React.Component {
+    render() {
+        return (
+
+        )
+    };
+}
+
 
 function App() {
   return (
