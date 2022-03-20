@@ -13,8 +13,9 @@ class Counter1 extends React.Component {
         return (
             <div>
                 Counter1 : {value}
-            </div>;
-        }
+                <Button>+1</Button>
+            </div>
+        );
     }
 }
 
