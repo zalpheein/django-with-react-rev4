@@ -33,9 +33,9 @@ class FruitComponent extends React.Component {
                 <h1>좋아 하는 과일</h1>
                 <ul>
                     {   // 중괄호로 시작
-                        fruits.map(name => { // name 으로 순회
-                            return <li>{name}</li>;
-                        })
+                        fruits.map(name => ( // name 으로 순회
+                            <li>{name}</li>
+                        ))
                     }
                 </ul>
             </div>
