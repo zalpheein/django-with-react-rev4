@@ -9,8 +9,9 @@ class Counter1 extends React.Component {
     }
 
     onClick = () => {
+        const { value } = this.state;
         // 상태값을 설정시 setState 이용
-        this.setState( { value: 100 } )
+        this.setState( { value: value + 1 } )
     };
 
     render() {
