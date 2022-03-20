@@ -3,7 +3,9 @@ import { Button } from 'antd'
 import './App.css';
 
 class Counter1 extends React.Component {
-
+    state = {
+        value: this.props.initialValue,
+    }
 }
 
 function App() {
