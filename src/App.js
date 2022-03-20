@@ -9,9 +9,8 @@ class Counter1 extends React.Component {
 
     render() {
         const {value} = this.state; // 현재의 상태값을 조사하여 value 에 저장
-        return <div>{value}</div>;
+        return <div>Counter1 : {value}</div>;
     }
-
 }
 
 function App() {
