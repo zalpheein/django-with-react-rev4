@@ -8,7 +8,8 @@ class Counter1 extends React.Component {
     }
 
     render() {
-        return <div>{value}</div>
+        const {value} = this.state; // 현재의 상태값을 조사하여 value 에 저장
+        return <div>{value}</div>;
     }
 
 }
