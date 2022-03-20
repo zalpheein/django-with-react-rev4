@@ -8,12 +8,16 @@ class Counter1 extends React.Component {
         value: this.props.initialValue,
     }
 
+    onClick = () => {
+
+    };
+
     render() {
         const {value} = this.state; // 현재의 상태값을 조사하여 value 에 저장
         return (
             <div>
                 Counter1 : {value}
-                <Button>+1</Button>
+                <Button onClick={this.onClick} >+1</Button>
             </div>
         );
     }
