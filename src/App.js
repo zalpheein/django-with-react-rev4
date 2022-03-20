@@ -9,9 +9,9 @@ class Counter1 extends React.Component {
     };
 
     onClick = () => {
-        const { value } = this.state;
+        const value = this.state.value + 1;
         // 상태값을 설정시 setState 이용
-        this.setState( { value: value + 1 } );
+        this.setState( { value } );
     };
 
     render() {
@@ -25,32 +25,11 @@ class Counter1 extends React.Component {
     };
 }
 
-class FruitComponent extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>좋아 하는 과일</h1>
-                <ul>
-                    {   // 중괄호로 시작
-                        this.props.fruits.map((name, index) => ( // name 으로 순회
-                            <li key={index}>{name}</li>
-                        ))
-                    }
-                </ul>
-            </div>
-
-        )
-    };
-}
-
 
 function App() {
-  const fruits = ["바나나", "사과", "딸기", "수박", "배"]
-
   return (
     <div>
        <Counter1 initialValue={10} />
-       <FruitComponent fruits={fruits} />
     </div>
   );
 }
