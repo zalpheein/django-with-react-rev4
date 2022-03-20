@@ -1,5 +1,6 @@
 import logo from './logo.svg';
-import { Button } from 'antd'
+import React from 'react';
+import { Button } from 'antd';
 import './App.css';
 
 class Counter1 extends React.Component {
@@ -16,9 +17,7 @@ class Counter1 extends React.Component {
 function App() {
   return (
     <div>
-       가을 하늘
-       <button>Hello</button>
-       <Button type='primary' onClick={ () => console.log("클릭") } >ant 버튼</Button>
+       <Counter1 initialValue={10} />
     </div>
   );
 }
