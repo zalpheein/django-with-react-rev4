@@ -27,14 +27,14 @@ class Counter1 extends React.Component {
 
 class FruitComponent extends React.Component {
     render() {
-        const fruits = ["바나나", "사과", "딸기"]
+        const fruits = ["바나나", "사과", "딸기", "수박"]
         return (
             <div>
                 <h1>좋아 하는 과일</h1>
                 <ul>
                     {   // 중괄호로 시작
                         fruits.map(name => { // name 으로 순회
-
+                            return <li>{name}</li>;
                         })
                     }
                 </ul>
