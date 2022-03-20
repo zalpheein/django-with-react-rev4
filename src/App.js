@@ -7,7 +7,7 @@ function App() {
     <div>
        가을 하늘
        <button>Hello</button>
-       <Button>ant 버튼</Button>
+       <Button type='primary' >ant 버튼</Button>
     </div>
   );
 }
