@@ -6,6 +6,11 @@ class Counter1 extends React.Component {
     state = {
         value: this.props.initialValue,
     }
+
+    render() {
+        return <div>{value}</div>
+    }
+
 }
 
 function App() {
