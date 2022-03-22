@@ -9,8 +9,11 @@ class Counter1 extends React.Component {
     };
 
     onClick = () => {
+        // value 값이 업데이트 되지 않음... 반드시 setState 함수를 이용하여 상태값을 변경해야 함
+        // this.state.value += 1
+
         const value = this.state.value + 1;
-        // 상태값을 설정시 setState 이용
+        // 상태값을 설정시 setState 이용...상태값 변경 시.. 반드시 setState 함수 이용
         this.setState( { value } );
     };
 
